@@ -194,6 +194,8 @@ img {
 
 .property-selections {
   background-color: var(--clr-secondary);
+  margin-bottom: 6rem;
+  padding: 6rem;
 }
 .property-selections__wrapper {
   display: flex;
@@ -219,7 +221,7 @@ img {
 }
 
 .cards__container {
-  margin: 1rem;
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -403,7 +405,9 @@ img {
     text-align: center;
     transition: all 0.5s ease;
   }
-
+  .header__nav ul li a {
+    /* color:var(--clr-light); */
+  }
   .toggle__menu {
     display: flex;
     flex-direction: column;
@@ -432,4 +436,11 @@ img {
   .banner{
     
   }
+  /* 
+  TODO: 
+        - Banner
+        - Cards
+        - About Us
+        - Testimony
+  */
 }
