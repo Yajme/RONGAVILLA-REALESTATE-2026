@@ -230,7 +230,8 @@ img {
 .card {
   display: grid;
   background-color: var(--clr-light);
-  width: 120rem;
+  flex: 1;
+  min-width: 0;
   border-radius: 5px;
 }
 .card img {
@@ -389,9 +390,13 @@ img {
 /* Mobile Responsive CSS */
 
 @media only screen and (max-width: 600px) {
+  .container {
+    
+  }
   .header {
-    position: fixed;
     width: 100%;
+    position: sticky;
+    top: 0;
   }
   .header__nav ul {
     position: fixed;
@@ -400,13 +405,14 @@ img {
     width: 100%;
     right: -100%;
     margin-top: 4rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     transition: all 0.5s ease;
   }
   .header__nav ul li a {
-    /* color:var(--clr-light); */
+     color:var(--clr-light); 
   }
   .toggle__menu {
     display: flex;
@@ -432,9 +438,34 @@ img {
   .header__onboarding {
     display: none;
   }
+  
+  .banner {
+    min-height: 30rem;
+  }
 
-  .banner{
-    
+  .banner__text {
+    top: 2rem;
+    left: 2rem;
+    margin-left: 0px;
+  }
+
+  .banner__text h2 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .cards__container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__wrapper{
+    display: flex;
+    flex-direction: column-reverse;
   }
   /* 
   TODO: 
